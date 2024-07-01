@@ -1,6 +1,7 @@
 ---
 title: "101M Work with: Multimodal data"
-sidebar_position: 102
+sidebar_position: 12
+hide_table_of_contents: true
 ---
 
 import LearningGoals from '/src/components/Academy/learningGoals.jsx';

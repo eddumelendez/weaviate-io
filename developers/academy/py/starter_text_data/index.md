@@ -1,6 +1,7 @@
 ---
 title: "101T Work with: Text data"
-sidebar_position: 100
+sidebar_position: 11
+hide_table_of_contents: true
 ---
 
 import LearningGoals from '/src/components/Academy/learningGoals.jsx';

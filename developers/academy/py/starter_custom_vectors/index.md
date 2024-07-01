@@ -1,6 +1,7 @@
 ---
 title: "101V Work with: Your own vectors"
-sidebar_position: 101
+sidebar_position: 12
+hide_table_of_contents: true
 ---
 
 import LearningGoals from '/src/components/Academy/learningGoals.jsx';
