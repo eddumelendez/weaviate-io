@@ -99,16 +99,16 @@ These are the results for each dataset:
 
 ![SIFT1M Benchmark results](./img/benchmark_sift_128.png)
 
-import AnnSift128 from '/_includes/ann-sift-128.mdx';
+import AnnSift128 from '/_includes/benchmarks/ann-sift-128.mdx';
 
 <AnnSift128/>
 
-import AnnReadResultsTable from '/_includes/ann-read-results-table.mdx';
+import AnnReadResultsTable from '/_includes/benchmarks/ann-read-results-table.mdx';
 
 <AnnReadResultsTable/>
 
 #### Recommended configuration for SIFT1M
-import RecommendedConfig from '/_includes/ann-recommended-config.mdx';
+import RecommendedConfig from '/_includes/benchmarks/ann-recommended-config.mdx';
 
 <RecommendedConfig/>
 
@@ -124,7 +124,7 @@ import RecommendedConfig from '/_includes/ann-recommended-config.mdx';
 
 ![Glove25 Benchmark results](./img/benchmark_glove_25.png)
 
-import AnnGlove25 from '/_includes/ann-glove-25.mdx';
+import AnnGlove25 from '/_includes/benchmarks/ann-glove-25.mdx';
 
 <AnnGlove25/>
 
@@ -144,7 +144,7 @@ import AnnGlove25 from '/_includes/ann-glove-25.mdx';
 
 ![Deep Image 96 Benchmark results](./img/benchmark_deepimage_96.png)
 
-import AnnDeep96 from '/_includes/ann-deep-96.mdx';
+import AnnDeep96 from '/_includes/benchmarks/ann-deep-96.mdx';
 
 <AnnDeep96/>
 
@@ -164,7 +164,7 @@ import AnnDeep96 from '/_includes/ann-deep-96.mdx';
 
 ![GIST 960 Benchmark results](./img/benchmark_gist_960.png)
 
-import AnnGist960 from '/_includes/ann-gist-960.mdx';
+import AnnGist960 from '/_includes/benchmarks/ann-gist-960.mdx';
 
 <AnnGist960/>
 
