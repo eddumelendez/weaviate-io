@@ -104,7 +104,7 @@ export default function HomepageHeader() {
                 <Link to="/gen-feedback-loops">Learn more</Link>
               </div>
             </div>
-            <div className={styles.typeBox}>
+            <div className={`${styles.typeBox} ${styles.bigBox}`}>
               <div className={styles.typeIcon}>
                 <div
                   className={` ${styles.homeIcon} ${styles.infraIcon}`}
@@ -112,12 +112,25 @@ export default function HomepageHeader() {
                 <h2>Cost-performance optimization</h2>
               </div>
               <div className={styles.typeText}>
-                <p>
-                  Tailor AI infrastructure patterns to your use case. Improve
-                  memory footprint and resource efficiency without compromising
-                  performance.
-                </p>
-                <Link to="/cost-performance-optimization">Learn more</Link>
+                <div className={styles.tempContainer}>
+                  <div className={styles.cpoText}>
+                    <p>
+                      Tailor AI infrastructure patterns to your use case.
+                      Improve memory footprint and resource efficiency without
+                      compromising performance.
+                    </p>
+                    <Link to="/cost-performance-optimization">Learn more</Link>
+                  </div>
+                  <div
+                    className={`${styles.hotImage} ${styles.smallTemp}`}
+                  ></div>
+                  <div
+                    className={`${styles.warmImage} ${styles.smallTemp}`}
+                  ></div>
+                  <div
+                    className={`${styles.coldImage} ${styles.smallTemp}`}
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +160,7 @@ export default function HomepageHeader() {
             <div className={styles.serviceImage}></div>
           </div>
 
-          <div className={styles.tempBox}>
+          {/*  <div className={styles.tempBox}>
             <div className={styles.tempText}>
               <h2>AI infrastructure tailored to your use case </h2>
 
@@ -169,7 +182,7 @@ export default function HomepageHeader() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
       <div className={styles.bottomBg}>
