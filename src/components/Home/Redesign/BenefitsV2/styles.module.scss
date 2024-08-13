@@ -1,0 +1,115 @@
+.bgContainer {
+  background: #130c49;
+}
+
+.benefitsHolder {
+  display: flex;
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 25px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    margin: 30px 0px;
+  }
+
+  .title {
+    color: #fff;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.33%; /* 3.14656rem */
+  }
+
+  .subtitle {
+    color: #b9c8de;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.33%; /* 2.35994rem */
+  }
+
+  span {
+    color: #b9c8de;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 157.33%;
+  }
+}
+
+.benefitsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.benefit {
+  border-radius: 0.3125rem;
+  width: 28.3032rem;
+  height: 10.5625rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+
+  .benefitText {
+    h4 {
+      color: #61bd73;
+
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 144.9%; /* 2.1735rem */
+    }
+
+    p {
+      color: #b9c8de;
+
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 157.33%; /* 1.57331rem */
+    }
+
+    a {
+      color: #b9c8de;
+      display: none;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 157.33%;
+      text-decoration-line: underline;
+    }
+  }
+
+  .icon {
+    width: 6.32144rem;
+    height: 6.33681rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-image: url('/img/site/weaviate-benefits-icon-01.svg');
+  }
+}

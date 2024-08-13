@@ -7,6 +7,8 @@ import HomepageHeader from '/src/components/Home/Redesign/Header';
 import HomepageWhatYouCanDo from '/src/components/Home/Redesign/WhatYouCanDoUpdate';
 import HomepageLovedByDevelopers from '/src/components/Home/Redesign/LovedByDeveloperUpdate/index.jsx';
 import HomepageJoinCommunity from '/src/components/Home/Redesign/JoinCommunityUpdate';
+import HomepageBenefits from '/src/components/Home/Redesign/Benefits';
+
 import HomepageIntegrations from '/src/components/Home/Redesign/IntegrationsUpdate';
 import HomepageTestimonials from '/src/components/Home/Redesign/Testimonials';
 import Resources from '/src/components/Home/Redesign/Resources';
@@ -14,6 +16,7 @@ import CTA from '/src/components/Home/Redesign/CTA';
 
 import ContactForm from '/src/components/Home/Redesign/Contact/contactForm';
 import ThemeSwitch from '/src/components/ThemeSwitch';
+import HomepageBenefitsV2 from '/src/components/Home/Redesign/BenefitsV2';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -26,7 +29,9 @@ export default function Home() {
         <main>
           <HomepageLovedByDevelopers />
           <HomepageTestimonials />
-          <HomepageWhatYouCanDo />
+
+          <HomepageBenefitsV2 />
+
           <HomepageIntegrations />
 
           <Resources />

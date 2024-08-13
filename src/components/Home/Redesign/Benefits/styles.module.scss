@@ -1,0 +1,91 @@
+.container {
+  background: #130c49;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  .title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.33%; /* 3.14656rem */
+  }
+
+  .subtitle {
+    color: #b9c8de;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.33%; /* 1.96663rem */
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.benefitsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.benefit {
+  border-radius: 0.3125rem;
+  background: #262262;
+  width: 32.30325rem;
+  height: 14.5625rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+
+  .benefitText {
+    h4 {
+      color: #61bd73;
+
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 144.9%; /* 2.1735rem */
+    }
+
+    p {
+      color: #b9c8de;
+      margin: 20px 0px;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 157.33%; /* 1.57331rem */
+    }
+
+    a {
+      color: #b9c8de;
+
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 157.33%;
+      text-decoration-line: underline;
+    }
+  }
+
+  .icon {
+    width: 7.5625rem;
+    height: 7.1875rem;
+    flex-shrink: 0;
+    background-image: url('/img/site/weaviate-benefits-icon.svg');
+  }
+}
