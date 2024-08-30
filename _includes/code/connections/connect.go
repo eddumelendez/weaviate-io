@@ -67,7 +67,7 @@ func CreateClient() {
 	cfg := weaviate.Config{
 		Host:       "localhost:8080",
 		Scheme:     "http",
-        Headers:    nil,
+		Headers:    nil,
 	}
 
 	client, err := weaviate.NewClient(cfg)
@@ -108,8 +108,8 @@ func CreateClient() {
 	cfg := weaviate.Config{
 		Host:       "localhost:8080",
 		Scheme:     "http",
-        Headers:    nil,
-        // The Go client doesn't use the gRPC port
+		Headers:    nil,
+		// The Go client doesn't use the gRPC port
 	}
 
 	client, err := weaviate.NewClient(cfg)
@@ -148,7 +148,7 @@ import (
 	"os"
 
 	"github.com/weaviate/weaviate-go-client/v4/weaviate"
-    "github.com/weaviate/weaviate-go-client/v4/weaviate/auth"
+	"github.com/weaviate/weaviate-go-client/v4/weaviate/auth"
 )
 
 // Create the client
@@ -156,8 +156,8 @@ func CreateClient() {
 	cfg := weaviate.Config{
 		Host:       "localhost:8080",
 		Scheme:     "http",
-        AuthConfig: auth.ApiKey{Value: os.Getenv("WEAVIATE_API_KEY")},
-        Headers:    nil,
+		AuthConfig: auth.ApiKey{Value: os.Getenv("WEAVIATE_API_KEY")},
+		Headers:    nil,
 	}
 
 	client, err := weaviate.NewClient(cfg)
@@ -202,9 +202,9 @@ func CreateClient() {
 	cfg := weaviate.Config{
 		Host:       "localhost:8080",
 		Scheme:     "http",
-        Headers:     map[string]string{
-            "X-Cohere-Api-Key": os.Getenv("WEAVIATE_COHERE_KEY"),
-        },
+		Headers:     map[string]string{
+		    "X-Cohere-Api-Key": os.Getenv("WEAVIATE_COHERE_KEY"),
+		},
 	}
 
 	client, err := weaviate.NewClient(cfg)
@@ -249,17 +249,17 @@ import (
 // Create the client
 func CreateClient() {
 cfg := weaviate.Config{
-    Host: os.Getenv("WEAVIATE_URL"),   // URL only, no scheme prefix
-    Scheme: "https",
-    AuthConfig: auth.ApiKey{Value: os.Getenv("WEAVIATE_API_KEY")},
-    Headers: map[string]string{
-        "X-Cohere-Api-Key": os.Getenv("WEAVIATE_COHERE_KEY"),
-    },
+	Host: os.Getenv("WEAVIATE_URL"),   // URL only, no scheme prefix
+	Scheme: "https",
+	AuthConfig: auth.ApiKey{Value: os.Getenv("WEAVIATE_API_KEY")},
+	Headers: map[string]string{
+		"X-Cohere-Api-Key": os.Getenv("WEAVIATE_COHERE_KEY"),
+	},
 }
 
 client, err := weaviate.NewClient(cfg)
 if err != nil{
-    fmt.Println(err)
+	fmt.Println(err)
 }
 
 // Check the connection
@@ -286,17 +286,17 @@ func main() {
 // WEAVIATE_PWD     your Weaviate OIDC password
 
 cfg := weaviate.Config{
-    Host:   "weaviate.example.com",
-    Scheme: "http",
-    AuthConfig: auth.ResourceOwnerPasswordFlow{
-        Username: os.Getenv("WEAVIATE_USER"),
-        Password: os.Getenv("WEAVIATE_PWD"),
-        Scopes:   []string{"offline_access"}, // optional, depends on the configuration of your identity provider (not required with WCD)
-    },
-    Headers: nil,
+	Host:   "weaviate.example.com",
+	Scheme: "http",
+	AuthConfig: auth.ResourceOwnerPasswordFlow{
+		Username: os.Getenv("WEAVIATE_USER"),
+		Password: os.Getenv("WEAVIATE_PWD"),
+		Scopes:   []string{"offline_access"}, // optional, depends on the configuration of your identity provider (not required with WCD)
+	},
+	Headers: nil,
 }
 client, err := weaviate.NewClient(cfg)
 if err != nil{
-    fmt.Println(err)
+	fmt.Println(err)
 }
 // END OIDCConnect
